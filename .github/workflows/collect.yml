@@ -1,9 +1,7 @@
 name: pachislot-daily-collect
 
 on:
-  schedule:
-    - cron: '50 13 * * *'  # 毎日 22:50 JST (UTC 13:50)
-  workflow_dispatch:        # 手動実行（テスト・緊急時）
+  workflow_dispatch:        # 手動実行のみ（自動スケジュール無効: papimo.jpがGitHub Actions IPをブロック）
 
 jobs:
   collect:
